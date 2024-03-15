@@ -56,7 +56,7 @@ extension ResponseHandling on HttpResult<Response> {
               final object = decode(jsonObject);
               return Ok(object);
             } on TypeError catch (e) {
-              _logger.e('Failed to parse json: ${response.body}', e);
+              _logger.e('Failed to parse json: ${response.body}', error: e);
               return Err(HttpDeserializationError(e, response.body));
             }
           },
