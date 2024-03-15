@@ -18,12 +18,22 @@ dependency injection and predictable testing of API integrations.
   above.
 * See [`location_search_page_test.dart`](weather_app/test/location_search/location_search_page_test.dart) for an example test
   with API integration.
+* See [`main.dart`](weather_app/lib/main.dart) for the main app scaffolding.
+* See [`app_pages`](weather_app/lib/app_pages/) for the UI.
 
 ## Dev Environment setup
 
 * Install [Flutter](https://flutter.dev/)
 * Install [Android Studio](https://developer.android.com/studio) with Flutter and Dart plugins
 * Install [XCode](https://developer.apple.com/xcode/) for iOS dev
+
+## Running checks
+
+This checks formatting, runs tests and checks for dependency cycles
+
+```
+make check
+```
 
 ## Running the app
 
@@ -48,14 +58,6 @@ dependency injection and predictable testing of API integrations.
 * Connect to your computer
 * Select in Android Studio's device list
 * Run `main.dart`
-
-## Running checks
-
-This checks formatting, runs tests and checks for dependency cycles
-
-```
-make check
-```
 
 ### Formatting
 
